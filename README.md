@@ -246,7 +246,7 @@ A: KaTeX有効化の設定を確認
 ## 参考リンク
 
 - [Sli.dev 公式ドキュメント](https://sli.dev/)
-- [Sli.dev テーマ一覧](https://sli.dev/themes/gallery.html)
+- [Sli.dev テーマ一覧](https://sli.dev/resources/theme-gallery)
 - [Vue.js ドキュメント](https://ja.vuejs.org/)
 - [Mermaid.js ドキュメント](https://mermaid.js.org/)
 - [KaTeX 数式記法](https://katex.org/docs/supported.html)
