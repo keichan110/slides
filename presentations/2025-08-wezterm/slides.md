@@ -294,7 +294,7 @@ return config
 
 ### wezterm.lua
 
-```lua {all|6-22}
+```lua {6-22|13-19}
 local wezterm = require 'wezterm'
 local config = wezterm.config_builder()
 
