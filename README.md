@@ -1,256 +1,238 @@
-# Sli.dev プレゼンテーション管理
+# Slides Management System
 
-このリポジトリは[Sli.dev](https://sli.dev/)を使用したプレゼンテーションを効率的に管理するためのものです。  
-**AIアシスタントがプレゼンテーションの内容・目的・対象者に応じて毎回最適な構成を考えることを前提**とした、シンプルで柔軟な構造になっています。
+このリポジトリは[Sli.dev](https://sli.dev/)を使用したプレゼンテーション管理システムです。シンプルで柔軟な構造により、プレゼンテーションの内容・目的・対象者に応じて最適な構成を作成できます。
 
-## ディレクトリ構造
+## 🏗️ プロジェクト構造（モノレポ管理）
 
 ```
 slides/
 ├── README.md                        # このファイル
+├── package.json                     # ルート依存関係（@slidev/cli等の統一管理）
 ├── shared/                          # 共通リソース（必要に応じて使用）
 │   ├── assets/                     # 共通画像・アイコン・ファイル
 │   ├── components/                 # 再利用可能なVueコンポーネント
 │   └── styles/                     # 共通CSSスタイル
 └── presentations/                   # 実際のプレゼンテーション
     ├── YYYY-MM-topic/              # 日付-トピック形式
-    │   ├── slides.md               # メインスライドファイル
-    │   ├── package.json            # プロジェクト依存関係
+    │   ├── slides.md               # メインスライドファイル（Sli.devマークダウン）
+    │   ├── slide-outline.md        # スライド構成案とメモ
+    │   ├── package.json            # テーマ依存関係のみ
     │   ├── components/             # プレゼンテーション固有のコンポーネント
-    │   ├── public/                 # 静的アセット
-    │   └── ...                     # その他必要なファイル
+    │   └── public/                 # 静的アセット（画像・動画など）
     └── ...
 ```
 
-## AIとの協働によるスライド作成
+## 🚀 使用方法
 
-### 基本的な流れ
+### 日常の開発（従来通り）
 
-1. **要件共有**: プレゼンテーションの目的、対象者、内容、時間をAIに伝える
-2. **構成提案**: AIが最適な構成・デザイン・機能を提案
-3. **スライド生成**: AIが内容に応じてカスタマイズされたスライドを作成
-4. **反復改善**: フィードバックに基づいてAIが調整・改善
+各プレゼンテーションディレクトリで通常通り開発できます：
 
-### AIアシスタントへの指示例
+```bash
+# 開発したいプレゼンテーションディレクトリに移動
+cd presentations/2025-07-keyboard-lt
 
-```
-プレゼンテーション作成をお願いします。
+# 開発サーバー起動（ブラウザで自動オープン）
+npm run dev
 
-【基本情報】
-- タイトル: TypeScript入門
-- 対象者: JavaScript経験者（TypeScript未経験）
-- 時間: 45分
-- 目的: TypeScriptの基本概念と実践的な使い方を習得
+# 本番用ビルド
+npm run build
 
-【内容要件】
-- 基本的な型システムの説明
-- 実用的なコード例を多く含める
-- ハンズオン形式にしたい
-- 質疑応答の時間を含む
-```
+# PDFエクスポート（デフォルト）
+npm run export
 
-## Sli.devの主要機能
+# 明示的なPDFエクスポート
+npm run export:pdf
 
-### マークダウンベーススライド
+# PNGエクスポート
+npm run export:png
 
-```markdown
----
-# スライド1
-layout: default
----
-
-# タイトルスライド
-
-内容をここに記述
-
----
-
-# スライド2
-
-- 箇条書き
-- **太字**や*斜体*も使用可能
+# キャッシュクリア
+npm run clean
 ```
 
-### レイアウトバリエーション
+### 全体管理（新機能）
 
-```markdown
----
-layout: center
-class: text-center
----
+ルートディレクトリから全プレゼンテーションを管理：
 
-# 中央寄せレイアウト
+```bash
+# 全プレゼンテーションのビルド
+npm run build:all
 
----
-layout: image-right
-image: /path/to/image.jpg
----
+# 全プレゼンテーションのエクスポート
+npm run export:all
 
-# 画像付きレイアウト
+# 全プレゼンテーションのクリーンアップ
+npm run clean
 
-左側にテキスト、右側に画像を配置
+# 依存関係の管理
+npm install                    # ルートとワークスペースの依存関係インストール
+npm run install:all           # 完全な再インストール
 ```
 
-### インタラクティブ要素
+### 新規プレゼンテーション作成
 
-```markdown
-# アニメーション効果
+#### 🎯 自動作成スクリプト（推奨）
 
-<div v-click="1">
-最初にクリックで表示
-</div>
-
-<div v-click="2">
-次にクリックで表示
-</div>
-
-<div v-after>
-最後に自動表示
-</div>
+```bash
+# ルートディレクトリから実行
+npm run create-slide
 ```
 
-### コードハイライト
+対話式で以下を入力：
+- **日付** (YYYY-MM形式): デフォルトは現在の年月
+- **トピック名**: プレゼンテーションの内容
 
-```markdown
-# コード例
+実行すると以下が自動で作成されます：
+- `presentations/YYYY-MM-topic/` ディレクトリ
+- `package.json` (Slidevデフォルト設定)
+- `slides.md` (空のスライドファイル)
+- `public/images/` (画像用ディレクトリ)
+- 依存関係の自動インストール
 
-```typescript {2-4|6|all}
-interface User {
-  id: number        // ハイライト対象
-  name: string      // ハイライト対象  
-  email: string     // ハイライト対象
-  
-  isActive: boolean // 個別ハイライト
-}
+作成後は：
+```bash
+cd presentations/YYYY-MM-topic
+npm run dev
 ```
 
-### 数式表示（KaTeX）
+#### 📝 手動作成（参考）
 
-```markdown
-# 数式の例
+<details>
+<summary>従来の手動手順</summary>
 
-インライン: $E = mc^2$
+1. **ディレクトリ作成**
+   ```bash
+   mkdir presentations/YYYY-MM-topic
+   cd presentations/YYYY-MM-topic
+   ```
 
-ブロック:
-$$
-\sum_{i=1}^{n} x_i = x_1 + x_2 + \cdots + x_n
-$$
-```
+2. **package.json作成**（テンプレート）
+   ```json
+   {
+     "name": "YYYY-MM-topic",
+     "type": "module",
+     "private": true,
+     "scripts": {
+       "dev": "slidev --open",
+       "build": "slidev build",
+       "export": "slidev export",
+       "export:pdf": "slidev export --format pdf",
+       "export:png": "slidev export --format png",
+       "clean": "rimraf dist node_modules/.slidev"
+     }
+   }
+   ```
 
-### 図表（Mermaid）
+3. **依存関係インストール**
+   ```bash
+   npm install
+   ```
 
-```markdown
-# フローチャート
+4. **スライド作成**
+   ```bash
+   npm run dev
+   ```
 
-```mermaid
-graph TD
-    A[開始] --> B{条件}
-    B -->|Yes| C[処理A]
-    B -->|No| D[処理B]
-    C --> E[終了]
-    D --> E
-```
+</details>
 
-## 命名規則とベストプラクティス
+## 🎨 技術スタック
 
-### ディレクトリ命名
+### コア（統一管理）
+- **@slidev/cli**: v52.1.0（全プレゼンテーションで統一）
+- **Vue.js**: v3.5.18（インタラクティブコンポーネント用）
+- **@slidev/types**: TypeScript型定義
 
+### テーマ（個別管理）
+各プレゼンテーションで雰囲気に合ったテーマを選択：
+- `@slidev/theme-apple-basic`: Apple風のクリーンなデザイン
+- `slidev-theme-purplin`: 紫系のモダンテーマ
+- `slidev-theme-unicorn`: カラフルで楽しいテーマ
+- `slidev-theme-light-icons`: アイコンリッチなテーマ
+
+### ビルドツール
+- **Vite**: 高速ビルド
+- **Tailwind CSS**: スタイリング（Sli.devに組み込み）
+
+## 📁 命名規則
+
+### プレゼンテーションディレクトリ
 ```
 presentations/YYYY-MM-topic/
 ```
 
 **例:**
-- `2024-06-typescript-intro` - TypeScript入門セッション
-- `2024-07-team-retrospective` - チーム振り返り会
-- `2024-08-product-launch` - プロダクトローンチ発表
+- `2025-07-keyboard-lt` - キーボード紹介LT
+- `2025-08-wezterm` - WezTerm紹介
+- `2024-12-year-review` - 年末振り返り
+- `2025-01-tech-roadmap` - 技術ロードマップ
 
-### プロジェクト構成のベストプラクティス
+### ファイル命名
+- `slides.md`: メインスライド（固定）
+- `slide-outline.md`: 構成メモ（固定）
+- `public/images/`: 画像は説明的な名前（例: `title_cover.png`, `comparison_chart.png`）
 
-1. **package.json**: 必要な依存関係のみを含める
-2. **slides.md**: メインコンテンツファイル
-3. **components/**: プレゼンテーション固有のVueコンポーネント
-4. **public/**: 画像や動画などの静的アセット
-5. **styles/**: カスタムCSS（必要に応じて）
+## 🔧 依存関係管理の特徴
 
-### AIによる最適化のメリット
+### モノレポのメリット
+- **統一バージョン管理**: @slidev/cli等のコアライブラリを一元管理
+- **効率的なディスク使用**: 重複するnode_modulesを削減
+- **簡単な全体操作**: 一度に全プレゼンテーションをビルド・エクスポート可能
 
-- **内容特化**: プレゼンテーションの内容に最適化された構成
-- **対象者考慮**: 聴衆のレベルや業界に応じたトーンや説明レベル
-- **目的最適化**: 教育、営業、報告など目的に応じた構成とデザイン
-- **最新機能活用**: Sli.devの最新機能を適切に活用
-- **創造性**: 固定テンプレートに縛られない自由な発想
+### テーマの柔軟性
+- **個別テーマ選択**: プレゼンテーションごとに最適なテーマを選択
+- **雰囲気重視**: 内容や対象者に応じたビジュアル調整が可能
+- **独立性維持**: 他のプレゼンテーションに影響なく変更可能
 
-## 開発ワークフロー
+## 💡 開発のコツ
 
-### 1. プレゼンテーション作成
+### 柔軟な設計思想
+- 固定テンプレートではなく、毎回プレゼンテーションに最適化された構成
+- 内容・対象者・目的に応じたカスタマイズ重視
+- 最新のSli.dev機能を活用した創造的な表現
 
+### パフォーマンス最適化
+- 画像は適切なサイズに最適化
+- 必要最小限の依存関係
+- 静的アセットは`public/`ディレクトリに配置
+
+### 開発時の注意点
+- Node.js 18以上推奨
+- 画像パスは`/images/filename.ext`形式
+- カスタムコンポーネントは`components/`ディレクトリ
+- プレゼンテーション固有のスタイルは各プロジェクト内に配置
+
+## 🚨 トラブルシューティング
+
+### 依存関係の問題
 ```bash
-# AIが作成したディレクトリに移動
-cd presentations/2024-06-typescript-intro
-
-# 依存関係をインストール
+# クリーンインストール
+npm run clean
+rm -rf node_modules package-lock.json
 npm install
-
-# 開発サーバー起動
-npm run dev
 ```
 
-### 2. ビルド・エクスポート
-
+### テーマが見つからない
 ```bash
-# 本番用ビルド
-npm run build
-
-# PDFエクスポート
-npm run export
-
-# その他の形式（設定により）
-npm run export:png
-npm run export:pptx
+# 特定のプレゼンテーションでテーマを再インストール
+cd presentations/YYYY-MM-topic
+npm install
 ```
 
-## 共通リソースの活用
+### バージョン競合
+```bash
+# overrides設定により@slidev/cliはv52.1.0で統一されます
+# テーマ内の古いバージョンは自動的に上書きされます
+npm ls @slidev/cli  # バージョン確認
+```
 
-### shared/assets/
-- 会社ロゴ
-- 共通アイコン
-- 背景画像
-- テンプレート画像
-
-### shared/components/
-- 会社情報コンポーネント
-- 共通チャートコンポーネント
-- カスタムレイアウト
-
-### shared/styles/
-- 会社ブランドカラー
-- フォント設定
-- 共通スタイル定義
-
-## トラブルシューティング
-
-### よくある問題
-
-**Q: 開発サーバーが起動しない**
-A: Node.jsバージョンを確認（推奨: 18以上）
-
-**Q: 画像が表示されない**
-A: `public/`ディレクトリに配置し、パスを確認
-
-**Q: カスタムコンポーネントが認識されない**
-A: `components/`ディレクトリの配置とファイル名を確認
-
-**Q: 数式が表示されない**
-A: KaTeX有効化の設定を確認
-
-## 参考リンク
+## 📚 参考リンク
 
 - [Sli.dev 公式ドキュメント](https://sli.dev/)
-- [Sli.dev テーマ一覧](https://sli.dev/resources/theme-gallery)
-- [Vue.js ドキュメント](https://ja.vuejs.org/)
-- [Mermaid.js ドキュメント](https://mermaid.js.org/)
-- [KaTeX 数式記法](https://katex.org/docs/supported.html)
+- [テーマギャラリー](https://sli.dev/themes/gallery.html)
+- [Vue.js 公式ドキュメント](https://vuejs.org/)
+- [Tailwind CSS](https://tailwindcss.com/)
 
----
+## 🤝 コントリビューション
 
-**AIと協力して、毎回最適で創造的なプレゼンテーションを作成しましょう！ 🚀**
+新しいプレゼンテーション作成や改善提案がある場合は、プロジェクトの柔軟性を保ちながら進めてください。
