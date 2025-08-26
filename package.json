@@ -7,6 +7,7 @@
     "presentations/*"
   ],
   "scripts": {
+    "create-slide": "node scripts/create-slide.js",
     "dev": "echo 'Please navigate to specific presentation directory and run npm run dev'",
     "build:all": "npm run build --workspaces",
     "export:all": "npm run export --workspaces",
