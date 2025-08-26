@@ -8,11 +8,14 @@
     "build": "slidev build",
     "export": "slidev export",
     "export:pdf": "slidev export --format pdf",
-    "export:png": "slidev export --format png",
-    "clean": "rimraf dist node_modules/.slidev"
+    "export:png": "slidev export --format png"
   },
   "dependencies": {
+    "@slidev/cli": "^0.48.0",
     "@slidev/theme-apple-basic": "^0.25.1",
     "slidev-theme-light-icons": "^1.0.2"
+  },
+  "devDependencies": {
+    "@slidev/types": "^0.48.0"
   }
 }

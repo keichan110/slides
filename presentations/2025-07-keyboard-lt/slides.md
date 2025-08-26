@@ -156,7 +156,7 @@ image: '/images/keyboard_history.png'
         </ul>
       </div>
     </div>
-    <img src="/images/low_cost_keyboard.png" alt="low cost keyboard image">
+    <img src="images/low_cost_keyboard.png" alt="low cost keyboard image">
   </div>
   <div>
     <h2 class="text-center">High-end</h2>
@@ -177,7 +177,7 @@ image: '/images/keyboard_history.png'
         </ul>
       </div>
     </div>
-    <img src="/images/high_end_keyboard.png" alt="high price keyboard image">
+    <img src="images/high_end_keyboard.png" alt="high price keyboard image">
   </div>
 </div>
 
@@ -256,19 +256,19 @@ image: '/images/key_points_for_keyboard.png'
   <div class="text-center">
     <h2>Logicool</h2>
     <p>K835GPR</p>
-    <img class="mt-8 -rotate-15" src="/images/recommend_logicool.png">
+    <img class="mt-8 -rotate-15" src="images/recommend_logicool.png">
     <p class="text-gray-400">¥8,000</p>
   </div>
   <div class="text-center">
     <h2>ELECOM</h2>
     <p>TK-GK20TBK</p>
-    <img class="mt-8 -rotate-15" src="/images/recommend_elecom.png">
+    <img class="mt-8 -rotate-15" src="images/recommend_elecom.png">
     <p class="text-gray-400">¥7,000</p>
   </div>
   <div class="text-center">
     <h2>Keychron</h2>
     <p>Keychron K2 Version 2</p>
-    <img class="mt-8 -rotate-15" src="/images/recommend_keychron.png">
+    <img class="mt-8 -rotate-15" src="images/recommend_keychron.png">
     <p class="text-gray-400">¥18,000</p>
   </div>
 </div>
