@@ -5,12 +5,13 @@
   "scripts": {
     "build": "slidev build",
     "dev": "slidev --open",
-    "export": "slidev export"
+    "export": "slidev export",
+    "export:pdf": "slidev export --format pdf",
+    "export:png": "slidev export --format png",
+    "clean": "rimraf dist node_modules/.slidev"
   },
   "dependencies": {
-    "@slidev/cli": "^52.1.0",
     "slidev-theme-purplin": "^1.2.0",
-    "slidev-theme-unicorn": "1.1.2",
-    "vue": "^3.5.18"
+    "slidev-theme-unicorn": "1.1.2"
   }
 }
