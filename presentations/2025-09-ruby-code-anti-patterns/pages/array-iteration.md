@@ -45,8 +45,14 @@ class: approach
 <h1>Q2<span class="text-sm text-gray-600 ml-4">配列の操作</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
-<<< @/snippets/bad/array_iteration.rb{all|3-5}
+<div class="relative">
+<h3 v-click.hide="4" class="absolute">🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
+<h3 v-click="4">✅<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
+</div>
+````md magic-move
+<<< @/snippets/bad/array_iteration.rb{all|3-5|2-5|all}
+<<< @/snippets/good/array_iteration.rb
+````
 </div>
 
 ::right::
@@ -79,13 +85,13 @@ class: answer
 <h1>Q2<span class="text-sm text-gray-600 ml-4">配列の操作</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
-<<< @/snippets/bad/array_iteration.rb
+<h3>✅<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
+<<< @/snippets/good/array_iteration.rb
 </div>
 
 ::right::
 
 <div class="mx-2 mt-14">
-<h3>✅<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
-<<< @/snippets/good/array_iteration.rb
+<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
+<<< @/snippets/bad/array_iteration.rb
 </div>

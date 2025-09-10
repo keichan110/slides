@@ -48,8 +48,17 @@ class: approach
 <h1>Q5<span class="text-sm text-gray-600 ml-4">コントローラーの責務</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
-<<< @/snippets/bad/controller_responsibility.rb{all|4,5|7,8,10,11|3}
+<div class="relative">
+<h3 v-click.hide="5" class="absolute">🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
+<h3 v-click="5" v-click.hide="6" class="absolute">✅<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
+<h3 v-click="6">✅<span class="text-xs text-gray-400 ml-2">app/models/user.rb</span></h3>
+</div>
+````md magic-move
+<<< @/snippets/bad/controller_responsibility.rb{all|4,5|7-12|3|all}
+<<< @/snippets/good/users_controller.rb
+<<< @/snippets/good/controller_responsibility_model.rb
+````
+
 </div>
 
 ::right::
@@ -88,15 +97,15 @@ class: answer
 <h1>Q5<span class="text-sm text-gray-600 ml-4">コントローラーの責務</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
-<<< @/snippets/bad/controller_responsibility.rb
+<h3>✅<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
+<<< @/snippets/good/users_controller.rb
 </div>
 
 ::right::
 
 <div class="mx-2 mt-14">
-<h3>✅<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
-<<< @/snippets/good/users_controller.rb
+<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
+<<< @/snippets/bad/controller_responsibility.rb
 </div>
 
 ---
@@ -108,14 +117,14 @@ class: answer
 <h1>Q5<span class="text-sm text-gray-600 ml-4">コントローラーの責務</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
-<<< @/snippets/bad/controller_responsibility.rb
+<h3 class="mt-4">✅<span class="text-xs text-gray-400 ml-2">app/models/user.rb</span></h3>
+<<< @/snippets/good/controller_responsibility_model.rb
 </div>
 
 ::right::
 
 <div class="mx-2 mt-14">
-<h3 class="mt-4">✅<span class="text-xs text-gray-400 ml-2">app/models/user.rb</span></h3>
-<<< @/snippets/good/controller_responsibility_model.rb
+<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
+<<< @/snippets/bad/controller_responsibility.rb
 </div>
 

@@ -48,8 +48,14 @@ class: approach
 <h1>Q7<span class="text-sm text-gray-600 ml-4">認可の問題</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/posts_controller.rb</span></h3>
+<div class="relative">
+<h3 v-click.hide="4" class="absolute">🐣<span class="text-xs text-gray-400 ml-2">app/controllers/posts_controller.rb</span></h3>
+<h3 v-click="4">✅<span class="text-xs text-gray-400 ml-2">app/controllers/posts_controller.rb</span></h3>
+</div>
+````md magic-move
 <<< @/snippets/bad/authorization.rb{all|3,7,11|7,11|all}
+<<< @/snippets/good/authorization.rb
+````
 </div>
 
 ::right::
@@ -89,13 +95,13 @@ class: answer
 <h1>Q7<span class="text-sm text-gray-600 ml-4">認可の問題</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/posts_controller.rb</span></h3>
-<<< @/snippets/bad/authorization.rb
+<h3>✅<span class="text-xs text-gray-400 ml-2">app/controllers/posts_controller.rb</span></h3>
+<<< @/snippets/good/authorization.rb
 </div>
 
 ::right::
 
 <div class="mx-2 mt-14">
-<h3>✅<span class="text-xs text-gray-400 ml-2">app/controllers/posts_controller.rb</span></h3>
-<<< @/snippets/good/authorization.rb
+<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/posts_controller.rb</span></h3>
+<<< @/snippets/bad/authorization.rb
 </div>

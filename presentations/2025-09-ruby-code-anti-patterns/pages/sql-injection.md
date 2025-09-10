@@ -48,23 +48,16 @@ class: approach
 <h1>Q6<span class="text-sm text-gray-600 ml-4">SQL インジェクションの脆弱性</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
-<<< @/snippets/bad/sql_injection.rb{all|5|4,5}
+<div class="relative">
+<h3 v-click.hide="5" class="absolute">🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
+<h3 v-click="5">✅<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
+</div>
+````md magic-move
+<<< @/snippets/bad/sql_injection.rb{all|5|4,5|4,5|all}
+<<< @/snippets/good/sql_injection.rb
+````
 </div>
 
-<div v-click="4">
-
-悪意のある入力
-```ruby
-params[:search] = "'; DROP TABLE users; --"
-```
-
-生成される危険な SQL
-```sql
-SELECT * FROM users 
-WHERE name LIKE '%'; DROP TABLE users; --%'
-```
-</div>
 
 ::right::
 
@@ -92,6 +85,18 @@ WHERE name LIKE '%'; DROP TABLE users; --%'
 → 入力値をSQL文字列として安全にエスケープ処理
 
 </div>
+
+<div v-click="4">
+
+悪意のある入力
+```ruby
+params[:search] = "'; DROP TABLE users; --"
+```
+```sql
+SELECT * FROM users 
+WHERE name LIKE '%'; DROP TABLE users; --%'
+```
+</div>
 </div>
 
 ---
@@ -103,14 +108,13 @@ class: answer
 <h1>Q6<span class="text-sm text-gray-600 ml-4">SQL インジェクションの脆弱性</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
-<<< @/snippets/bad/sql_injection.rb
+<h3>✅<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
+<<< @/snippets/good/sql_injection.rb
 </div>
 
 ::right::
 
 <div class="mx-2 mt-14">
-<h3>✅ 安全な対策</h3>
-<<< @/snippets/good/sql_injection.rb
-
+<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
+<<< @/snippets/bad/sql_injection.rb
 </div>

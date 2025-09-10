@@ -6,8 +6,10 @@ class: problem-slide
 # Q4
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/views/users/index.html.erb</span></h3>
+<h3>🐣<span class="text-xs text-gray-400 ml-2">app/views/users/index.html.ebr</span></h3>
 <<< @/snippets/bad/n_plus_one.erb
+<h3><span class="text-xs text-gray-400 ml-2">app/controller/users_controller.rb</span></h3>
+<<< @/snippets/bad/n_plus_one.rb
 </div>
 
 ::right::
@@ -47,8 +49,19 @@ class: approach
 <h1>Q4<span class="text-sm text-gray-600 ml-4">N+1 クエリ問題</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/views/users/index.html.erb</span></h3>
-<<< @/snippets/bad/n_plus_one.erb{all|3|1,3,5}
+<div class="relative">
+<h3 v-click.hide="5" class="absolute">🐣<span class="text-xs text-gray-400 ml-2">app/views/users/index.html.erb</span></h3>
+<h3 v-click="5">✅<span class="text-xs text-gray-400 ml-2">app/views/users/index.html.erb</span></h3>
+<<< @/snippets/bad/n_plus_one.erb{all|3|1,3,5|1,3,5|all}
+
+<h3><span class="text-xs text-gray-400 ml-2">app/controller/users_controller.rb</span></h3>
+````md magic-move
+<<< @/snippets/bad/n_plus_one.rb
+<<< @/snippets/good/n_plus_one.rb
+````
+
+</div>
+
 </div>
 
 ::right::
@@ -88,16 +101,19 @@ class: answer
 <h1>Q4<span class="text-sm text-gray-600 ml-4">N+1 クエリ問題</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/view/users/index.html.erb</span></h3>
-<<< @/snippets/bad/n_plus_one.erb
-</div>
-
-::right::
-
-<div class="mx-2 mt-14">
 <h3>✅<span class="text-xs text-gray-400 ml-2">app/view/users/index.html.erb</span></h3>
 <<< @/snippets/good/n_plus_one.erb
 
 <h3><span class="text-xs text-gray-400 ml-2">app/controller/users_controller.rb</span></h3>
 <<< @/snippets/good/n_plus_one.rb
+
+</div>
+
+::right::
+
+<div class="mx-2 mt-14">
+<h3>🐣<span class="text-xs text-gray-400 ml-2">app/views/users/index.html.ebr</span></h3>
+<<< @/snippets/bad/n_plus_one.erb
+<h3><span class="text-xs text-gray-400 ml-2">app/controller/users_controller.rb</span></h3>
+<<< @/snippets/bad/n_plus_one.rb
 </div>

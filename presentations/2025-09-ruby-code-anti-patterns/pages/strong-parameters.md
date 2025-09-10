@@ -45,19 +45,14 @@ class: approach
 <h1>Q3<span class="text-sm text-gray-600 ml-4">Strong Parameters の問題</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
-<<< @/snippets/bad/strong_parameters.rb{all|3}
+<div class="relative">
+<h3 v-click.hide="4" class="absolute">🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
+<h3 v-click="4">✅<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
 </div>
-
-<div v-click="3">
-
-危険な例
-
-```ruby
-# 悪意のあるPOST
-{ user => { name => "John", email => "...", admin => true } }
-# → admin権限が付与される可能性
-```
+````md magic-move
+<<< @/snippets/bad/strong_parameters.rb{all|3|3|all}
+<<< @/snippets/good/strong_parameters.rb
+````
 </div>
 
 ::right::
@@ -79,6 +74,18 @@ class: approach
 → 必要な属性のみを明示的に許可
 
 </div>
+
+<div v-click="3">
+
+危険な例
+
+```ruby
+# 悪意のあるPOST
+{ user => { name => "John", email => "...", admin => true } }
+# → admin権限が付与される可能性
+```
+</div>
+
 </div>
 
 ---
@@ -90,14 +97,14 @@ class: answer
 <h1>Q3<span class="text-sm text-gray-600 ml-4">Strong Parameters の問題</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
-<<< @/snippets/bad/strong_parameters.rb
+<h3>✅<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
+<<< @/snippets/good/strong_parameters.rb
 </div>
 
 ::right::
 
 <div class="mx-2 mt-14">
-<h3>✅<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
-<<< @/snippets/good/strong_parameters.rb
+<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/users_controller.rb</span></h3>
+<<< @/snippets/bad/strong_parameters.rb
 </div>
 

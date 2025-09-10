@@ -48,8 +48,16 @@ class: approach
 <h1>Q8<span class="text-sm text-gray-600 ml-4">メソッドの責務が多すぎる</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/orders_controller.rb</span></h3>
-<<< @/snippets/bad/single_responsibility.rb{all|1,2,3,5,6,7,8,10,11,12,13,14,15,17,18|5,6,7,8,10,11,12,13,14,15|17,18}
+<div class="relative">
+<h3 v-click.hide="5" class="absolute">🐣<span class="text-xs text-gray-400 ml-2">app/controllers/orders_controller.rb</span></h3>
+<h3 v-click="5" v-click.hide="6" class="absolute">✅<span class="text-xs text-gray-400 ml-2">app/controllers/orders_controller.rb</span></h3>
+<h3 v-click="6">✅<span class="text-xs text-gray-400 ml-2">app/models/order.rb</span></h3>
+</div>
+````md magic-move
+<<< @/snippets/bad/single_responsibility.rb{all|5-18|5-18|5-18|all}
+<<< @/snippets/good/single_responsibility.rb
+<<< @/snippets/good/single_responsibility_model.rb
+````
 </div>
 
 ::right::
@@ -88,15 +96,15 @@ class: answer
 <h1>Q8<span class="text-sm text-gray-600 ml-4">メソッドの責務が多すぎる</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/orders_controller.rb</span></h3>
-<<< @/snippets/bad/single_responsibility.rb
+<h3>✅<span class="text-xs text-gray-400 ml-2">app/controllers/orders_controller.rb</span></h3>
+<<< @/snippets/good/single_responsibility.rb
 </div>
 
 ::right::
 
 <div class="mx-2 mt-14">
-<h3>✅<span class="text-xs text-gray-400 ml-2">app/controllers/orders_controller.rb</span></h3>
-<<< @/snippets/good/single_responsibility.rb
+<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/orders_controller.rb</span></h3>
+<<< @/snippets/bad/single_responsibility.rb
 </div>
 
 ---
@@ -108,14 +116,14 @@ class: answer
 <h1>Q8<span class="text-sm text-gray-600 ml-4">メソッドの責務が多すぎる</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/orders_controller.rb</span></h3>
-<<< @/snippets/bad/single_responsibility.rb
+<h3 class="mt-4">✅<span class="text-xs text-gray-400 ml-2">app/models/order.rb</span></h3>
+<<< @/snippets/good/single_responsibility_model.rb
 </div>
 
 ::right::
 
 <div class="mx-2 mt-14">
-<h3 class="mt-4">✅<span class="text-xs text-gray-400 ml-2">app/models/order.rb</span></h3>
-<<< @/snippets/good/single_responsibility_model.rb
+<h3>🐣<span class="text-xs text-gray-400 ml-2">app/controllers/orders_controller.rb</span></h3>
+<<< @/snippets/bad/single_responsibility.rb
 </div>
 

@@ -31,9 +31,16 @@ class: approach
 <h1>Ex<span class="text-sm text-gray-600 ml-4">変数名の問題</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/services/calculator.rb</span></h3>
-<<< @/snippets/bad/calculator.rb{all|3|3|4}
+<div class="relative">
+<h3 v-click.hide="5" class="absolute">🐣<span class="text-xs text-gray-400 ml-2">app/services/calculator.rb</span></h3>
+<h3 v-click="5">✅<span class="text-xs text-gray-400 ml-2">app/services/calculator.rb</span></h3>
 </div>
+````md magic-move
+<<< @/snippets/bad/calculator.rb{all|3|3|4|all}
+<<< @/snippets/good/calculator.rb
+````
+</div>
+
 
 ::right::
 
@@ -73,14 +80,14 @@ class: answer
 <h1>Ex<span class="text-sm text-gray-600 ml-4">変数名の問題</span></h1>
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/services/calculator.rb</span></h3>
-<<< @/snippets/bad/calculator.rb
+<h3>✅<span class="text-xs text-gray-400 ml-2">app/services/calculator.rb</span></h3>
+<<< @/snippets/good/calculator.rb
 </div>
 
 ::right::
 
 <div class="mx-2 mt-14">
-<h3>✅<span class="text-xs text-gray-400 ml-2">app/services/calculator.rb</span></h3>
-<<< @/snippets/good/calculator.rb
+<h3>🐣<span class="text-xs text-gray-400 ml-2">app/services/calculator.rb</span></h3>
+<<< @/snippets/bad/calculator.rb
 </div>
 

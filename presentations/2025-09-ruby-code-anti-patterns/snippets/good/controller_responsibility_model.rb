@@ -1,4 +1,3 @@
-# app/models/user.rb
 class User < ApplicationRecord
   validates :email, 
     presence: true,

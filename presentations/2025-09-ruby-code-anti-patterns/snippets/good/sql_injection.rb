@@ -1,4 +1,3 @@
-# app/controllers/users_controller.rb
 class UsersController < ApplicationController
   def search
     search_term = params[:search]
