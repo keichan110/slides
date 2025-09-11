@@ -6,7 +6,7 @@ class: problem-slide
 # Q4
 
 <div class="mx-2">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/views/users/index.html.ebr</span></h3>
+<h3>🐣<span class="text-xs text-gray-400 ml-2">app/views/users/index.html.erb</span></h3>
 <<< @/snippets/bad/n_plus_one.erb
 <h3><span class="text-xs text-gray-400 ml-2">app/controller/users_controller.rb</span></h3>
 <<< @/snippets/bad/n_plus_one.rb
@@ -112,7 +112,7 @@ class: answer
 ::right::
 
 <div class="mx-2 mt-14">
-<h3>🐣<span class="text-xs text-gray-400 ml-2">app/views/users/index.html.ebr</span></h3>
+<h3>🐣<span class="text-xs text-gray-400 ml-2">app/views/users/index.html.erb</span></h3>
 <<< @/snippets/bad/n_plus_one.erb
 <h3><span class="text-xs text-gray-400 ml-2">app/controller/users_controller.rb</span></h3>
 <<< @/snippets/bad/n_plus_one.rb
