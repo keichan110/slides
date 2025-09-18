@@ -1,0 +1,46 @@
+/* カスタムスタイル：問題スライドのレイアウト改善 */
+
+/* two-cols レイアウトでの問題スライド専用スタイル */
+.slidev-layout.two-cols .col-left h1,
+.slidev-layout.two-cols .col-right h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* 左側：問題番号のスタイル調整 */
+.slidev-layout.two-cols .col-left h1 {
+  font-size: 2rem;
+  color: #2563eb;
+}
+
+/* 右側：ヒントの位置調整 - コードブロックの位置と揃える */
+.slidev-layout.two-cols .col-right h1 {
+  font-size: 2rem;
+  color: #059669;
+  margin-top: 2.5rem; /* コードブロックの開始位置と合わせる */
+}
+
+/* コードブロックのマージン調整 */
+.slidev-layout.two-cols .col-left pre {
+  margin-top: 1rem;
+}
+
+/* ヒントリストのスタイル調整 */
+.slidev-layout.two-cols .col-right .v-click {
+  margin-top: 0.5rem;
+}
+
+/* h2要素を非表示にするクラス */
+.hide-h2 h2 {
+  display: none;
+}
+
+/* 問題スライド専用：コードとヒントの高さを揃える */
+.problem-slide .col-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.problem-slide .col-right h1 {
+  margin-top: 2.5rem; /* コードブロック位置に合わせる */
+}
