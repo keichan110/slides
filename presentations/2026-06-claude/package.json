@@ -1,0 +1,20 @@
+{
+  "name": "2026-06-claude",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "slidev --open",
+    "build": "slidev build",
+    "export": "slidev export",
+    "export:pdf": "slidev export --format pdf",
+    "export:png": "slidev export --format png"
+  },
+  "dependencies": {
+    "@slidev/cli": "^52.15.2",
+    "@slidev/theme-default": "^0.25.0"
+  },
+  "devDependencies": {
+    "@slidev/types": "^52.15.2"
+  }
+}
