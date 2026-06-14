@@ -1,5 +1,5 @@
 ---
-layout: section
+layout: quote
 ---
 
 # What's Claude
