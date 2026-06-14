@@ -1,12 +1,22 @@
 ---
-layout: quote
+layout: section
+color: black
+slide_info: false
 ---
 
 # What's Claude
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
 
-# Claudeとは
+:: title ::
+
+# Claude
+
+:: content ::
 
 **Anthropicが開発した、長文読解とコーディングに強いAIアシスタント**
 
@@ -20,8 +30,16 @@ layout: quote
 - **安全性設計**: Constitutional AIによる誠実さ重視の設計
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
 
-# Claudeを作っている会社 ── Anthropic
+:: title ::
+
+# Anthropic
+
+:: content ::
 
 # Anthropicの概要
 
@@ -31,8 +49,16 @@ layout: quote
 - **資金調達**: Amazon・Googleなどから大型出資（企業評価額 約3,500億ドル）
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
 
-# Anthropicの沿革
+:: title ::
+
+# Anthropic
+
+:: content ::
 
 | 年月 | 出来事 |
 |------|--------|

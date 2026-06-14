@@ -1,7 +1,14 @@
 ---
+layout: top-title
+color: orange-light
+slide_info: false
 ---
 
+:: title ::
+
 # 今日のまとめ
+
+:: content ::
 
 - **「チャットAI」という枠を、もう超えている**  
   コードを書き、タスクを完了し、ブラウザを操作する

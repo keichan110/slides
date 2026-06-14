@@ -1,12 +1,22 @@
 ---
-layout: quote
+layout: section
+color: black
+slide_info: false
 ---
 
 # Models
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # Claude Fable 5
+
+:: content ::
 
 **Anthropic 史上最強のモデル** — Opusの上位に位置する新しいティア
 
@@ -21,8 +31,16 @@ layout: quote
 | 料金 | Input $10 / Output $50 /MTok |
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # Claude Opus 4.8
+
+:: content ::
 
 **旗艦 Opus モデル** — 自律性と知性の最前線
 
@@ -37,8 +55,16 @@ layout: quote
 | 料金 | Input $5 / Output $25 /MTok |
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # Claude Sonnet 4.6
+
+:: content ::
 
 **速度と知性のベストバランス** — 多くのユースケースに最適
 
@@ -53,8 +79,16 @@ layout: quote
 | 料金 | Input $3 / Output $15 /MTok |
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # Claude Haiku 4.5
+
+:: content ::
 
 **最速・最軽量** — コストと速度を最優先したいときに
 
@@ -69,8 +103,16 @@ layout: quote
 | 料金 | Input $1 / Output $5 /MTok |
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # モデル比較
+
+:: content ::
 
 |  | Fable 5 | Opus 4.8 | Sonnet 4.6 | Haiku 4.5 |
 |---|---:|---:|---:|---:|
@@ -81,8 +123,16 @@ layout: quote
 | Output ($/MTok) | $50 | $25 | $15 | $5 |
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # モデルの選び方
+
+:: content ::
 
 **タスクの工程**で、かける頭脳の大きさを変えるのがコツ
 

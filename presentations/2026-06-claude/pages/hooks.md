@@ -1,13 +1,23 @@
 ---
-layout: quote
+layout: section
+color: black
+slide_info: false
 ---
 
 # Hooks
 Claude | Claude Code | Claude Cowork
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # Hooks
+
+:: content ::
 
 - ファイル編集・セッション開始など特定タイミングにシェルコマンドを自動実行する仕組み
 - lint・フォーマット・危険操作のブロック・通知など、人の手を借りずに自動化できる
@@ -24,8 +34,16 @@ Claude | Claude Code | Claude Cowork
 ```
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # Hooks — ユースケース
+
+:: content ::
 
 | ユースケース | イベント | 説明 |
 |---|---|---|

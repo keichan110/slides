@@ -1,12 +1,22 @@
 ---
-layout: quote
+layout: section
+color: black
+slide_info: false
 ---
 
 # Plan
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # 個人プラン
+
+:: content ::
 
 |  | Free | Pro | Max 5x | Max 20x |
 |---|---|---|---|---|
@@ -19,8 +29,16 @@ layout: quote
 | 早期機能アクセス | — | — | ✓ | ✓ |
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # 法人プラン
+
+:: content ::
 
 |  | Team Standard | Team Premium | Enterprise |
 |---|---|---|---|

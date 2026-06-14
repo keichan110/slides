@@ -1,13 +1,23 @@
 ---
-layout: quote
+layout: section
+color: black
+slide_info: false
 ---
 
 # Skills
 Claude | Claude Code | Claude Cowork
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # Skills
+
+:: content ::
 
 - 定型ワークフローを一度作れば、何度でも `/コマンド名` で呼び出せる仕組み
 - Claude.ai・Claude Code・API のすべてで動作する
@@ -20,8 +30,16 @@ Claude | Claude Code | Claude Cowork
 | 個人 | 自分のメモフォーマット、開発ワークフロー |
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # Skills — ユースケース
+
+:: content ::
 
 自分で作れるスキルの例
 

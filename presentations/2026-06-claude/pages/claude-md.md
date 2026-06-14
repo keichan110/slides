@@ -1,13 +1,23 @@
 ---
-layout: quote
+layout: section
+color: black
+slide_info: false
 ---
 
 # CLAUDE.md
 Claude | Claude Code | Claude Cowork
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # CLAUDE.md
+
+:: content ::
 
 - セッション開始時に Claude が自動で読み込む、プロジェクトルールの設定ファイル
 - 一度書けば次のセッションでも同じルールが効く

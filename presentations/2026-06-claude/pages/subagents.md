@@ -1,13 +1,23 @@
 ---
-layout: quote
+layout: section
+color: black
+slide_info: false
 ---
 
 # Subagents
 Claude | Claude Code | Claude Cowork
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # Subagents
+
+:: content ::
 
 - Claude が別の Claude インスタンスにタスクを依頼して並列処理する仕組み
 - 調査・検索などをサブに任せることでメインの会話が圧迫されない
@@ -20,8 +30,16 @@ Claude | Claude Code | Claude Cowork
 | 専門化 | コード探索・設計・レビューなどを専門エージェントに委任 |
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # Subagents — ユースケース
+
+:: content ::
 
 | ユースケース | 説明 |
 |---|---|

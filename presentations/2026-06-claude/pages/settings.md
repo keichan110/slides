@@ -1,15 +1,23 @@
 ---
-layout: quote
+layout: section
+color: black
+slide_info: false
 ---
 
 # settings.json
 Claude | Claude Code | Claude Cowork
 
 ---
-layout: default
+layout: top-title
+color: orange-light
+slide_info: false
 ---
 
+:: title ::
+
 # settings.json
+
+:: content ::
 
 - Claude Code の動作を強制的に制御する JSON ファイル
 - CLAUDE.md と違い、Claude はここのルールを無視できない
@@ -22,10 +30,16 @@ layout: default
 | 主な用途 | 背景知識・ルール | 権限・動作設定 |
 
 ---
-layout: default
+layout: top-title
+color: orange-light
+slide_info: false
 ---
 
+:: title ::
+
 # settings.json — permissions
+
+:: content ::
 
 Claude が実行できる操作を allow / deny で制御する
 

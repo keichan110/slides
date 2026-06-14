@@ -1,25 +1,39 @@
 ---
-layout: quote
+layout: section
+color: black
+slide_info: false
 ---
 
 # Commands
 Claude | Claude Code | Claude Cowork
 
 ---
-layout: default
+layout: top-title
+color: orange-light
+slide_info: false
 ---
 
+:: title ::
+
 # Commands
+
+:: content ::
 
 - `/` から始まるコマンドで Claude Code をセッション内から制御する組み込み機能
 - モデル切替・コンテキスト整理・ワークフロー実行などをすばやく操作できる
 - メッセージの先頭でのみ認識される
 
 ---
-layout: default
+layout: top-title
+color: orange-light
+slide_info: false
 ---
 
+:: title ::
+
 # よく使われるコマンド
+
+:: content ::
 
 | コマンド | 概要 |
 |---|---|
@@ -33,10 +47,16 @@ layout: default
 | `/diff` | 変更差分を確認 |
 
 ---
-layout: default
+layout: top-title
+color: orange-light
+slide_info: false
 ---
 
+:: title ::
+
 # 使いこなすと便利なコマンド
+
+:: content ::
 
 | コマンド | 概要 |
 |---|---|

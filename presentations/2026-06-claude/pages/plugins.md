@@ -1,13 +1,23 @@
 ---
-layout: quote
+layout: section
+color: black
+slide_info: false
 ---
 
 # Plugins
 Claude | Claude Code | Claude Cowork
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # Plugins
+
+:: content ::
 
 - Skills・Hooks・MCP サーバーをひとつのパッケージにまとめて配布・共有できる仕組み
 - インストールするだけで関連機能がまとめて有効になる

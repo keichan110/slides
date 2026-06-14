@@ -1,12 +1,22 @@
 ---
-layout: quote
+layout: section
+color: black
+slide_info: false
 ---
 
 # Products
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # Claude
+
+:: content ::
 
 **Web・アプリ版のメインプロダクト** — claude.com から今すぐ使える
 
@@ -18,8 +28,16 @@ layout: quote
 - **Skills**: 特定タスク向けの専門機能を追加できる
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # Claude Code
+
+:: content ::
 
 **ターミナル・IDE から動くコーディングエージェント**
 
@@ -32,8 +50,16 @@ layout: quote
 - **権限管理**: ファイル編集・コマンド実行の前に確認を取る安全設計
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # Claude Cowork
+
+:: content ::
 
 **タスクを委任し、完成度の高い成果物を受け取る**
 
@@ -46,8 +72,16 @@ layout: quote
 - **マルチデバイス**: デスクトップ・モバイルどこからでもタスクを送信
 
 ---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
 
 # 連携プロダクト
+
+:: content ::
 
 ## Claude for Chrome
 - Chrome 上でナビゲート・クリック・フォーム入力を自律実行
