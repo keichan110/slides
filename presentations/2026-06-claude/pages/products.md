@@ -41,8 +41,6 @@ slide_info: false
 
 **ターミナル・IDE から動くコーディングエージェント**
 
-> Build, debug, and ship from your terminal, IDE, Slack, or the web.
-
 - **コードベース全体を理解**: 手動でファイルを選ばなくていい
 - **マルチファイル編集**: 複数ファイルにまたがる変更に一貫対応
 - **GitHub / GitLab 連携**: Issue 対応から PR サブミットまで一連で自動化
@@ -61,9 +59,7 @@ slide_info: false
 
 :: content ::
 
-**タスクを委任し、完成度の高い成果物を受け取る**
-
-> チャットと違い、Claude が独立してタスクを完了できる
+**バックグラウンドでタスクを自律実行するエージェント**
 
 - **スケジュール実行**: メールチェック・週次レポートなど定期作業を自動化
 - **ファイル整理**: ダウンロードフォルダの大量ファイルを分類・整頓
@@ -84,13 +80,10 @@ slide_info: false
 :: content ::
 
 ## Claude for Chrome
-- Chrome 上でナビゲート・クリック・フォーム入力を自律実行
-- 競合調査・カレンダー管理・メール整理などブラウザ業務をスケジュール自動化
+- ブラウザを自律操作して競合調査・カレンダー管理・メール整理などを自動化
 
 ## Claude for Slack
-- DM・スレッドメンションで返信案の作成・確認ができる
-- Claude Code と連携してコーディングタスクをリモート実行可能
+- Slack の DM・スレッドから返信作成や Claude Code によるコーディングタスクを実行
 
 ## Claude for Microsoft 365
-- Excel・PowerPoint・Word・Outlook で会話コンテキストを共有
-- スライドマスター・数式・スタイルを維持したまま編集・変更追跡で確認
+- Excel・Word・PowerPoint・Outlook に Claude を統合してコンテキストを共有しながら編集
