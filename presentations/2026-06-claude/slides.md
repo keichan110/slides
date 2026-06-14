@@ -10,6 +10,10 @@ slide_info: false
 # Claude 入門
 
 ---
+src: './pages/opening.md'
+---
+
+---
 layout: side-title
 color: orange-light
 align: lm-lm
