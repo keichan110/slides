@@ -135,6 +135,17 @@ slide_info: false
 
 :: content ::
 
----
-src: './pages/summary.md'
----
+<ul>
+  <li v-click>
+    <strong>「チャットAI」という枠を、もう超えている</strong><br>
+    コードを書き、タスクを完了し、ブラウザを操作する
+  </li>
+  <li v-click>
+    <strong>育てれば育てるほど、あなた専用になる</strong><br>
+    CLAUDE.md・Auto Memory・Hooks・MCP — カスタマイズは全部揃っている
+  </li>
+  <li v-click>
+    <strong>AIと人間の協働は、もう始まっている</strong><br>
+    このスライドも、Claudeと一緒に作りました
+  </li>
+</ul>
