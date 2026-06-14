@@ -2,10 +2,12 @@
 layout: section
 color: black
 slide_info: false
+products:
+  active: [claude-code]
+  partial: [cowork]
 ---
 
 # Hooks
-Claude | Claude Code | Claude Cowork
 
 ---
 layout: top-title

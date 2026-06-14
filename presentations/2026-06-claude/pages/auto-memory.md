@@ -2,10 +2,12 @@
 layout: section
 color: black
 slide_info: false
+products:
+  active: [claude, claude-code]
+  partial: [cowork]
 ---
 
 # Auto Memory
-Claude | Claude Code | Claude Cowork
 
 ---
 layout: top-title
