@@ -33,7 +33,7 @@ slide_info: false
 
 :: title ::
 
-# 代表的な MCP サーバー
+# MCP
 
 :: content ::
 

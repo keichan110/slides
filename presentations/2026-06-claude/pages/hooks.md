@@ -43,7 +43,7 @@ slide_info: false
 
 :: title ::
 
-# Hooks — ユースケース
+# Hooks
 
 :: content ::
 

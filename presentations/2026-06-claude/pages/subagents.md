@@ -39,7 +39,7 @@ slide_info: false
 
 :: title ::
 
-# Subagents — ユースケース
+# Subagents
 
 :: content ::
 

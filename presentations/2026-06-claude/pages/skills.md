@@ -39,7 +39,7 @@ slide_info: false
 
 :: title ::
 
-# Skills — ユースケース
+# Skills
 
 :: content ::
 

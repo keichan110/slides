@@ -33,7 +33,7 @@ slide_info: false
 
 :: title ::
 
-# よく使われるコマンド
+# Commands
 
 :: content ::
 
@@ -56,7 +56,7 @@ slide_info: false
 
 :: title ::
 
-# 使いこなすと便利なコマンド
+# Commands
 
 :: content ::
 

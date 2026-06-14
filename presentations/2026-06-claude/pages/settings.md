@@ -39,7 +39,7 @@ slide_info: false
 
 :: title ::
 
-# settings.json — permissions
+# settings.json
 
 :: content ::
 
