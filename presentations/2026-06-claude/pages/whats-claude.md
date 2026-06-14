@@ -1,12 +1,4 @@
 ---
-layout: section
-color: black
-slide_info: false
----
-
-# What's Claude
-
----
 layout: top-title
 color: orange-light
 slide_info: false
