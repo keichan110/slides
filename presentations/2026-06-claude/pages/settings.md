@@ -2,9 +2,6 @@
 layout: section
 color: black
 slide_info: false
-products:
-  active: [claude-code]
-  partial: [cowork]
 ---
 
 # settings.json
@@ -13,6 +10,9 @@ products:
 layout: top-title
 color: orange-light
 slide_info: false
+products:
+  active: [claude-code]
+  partial: [cowork]
 ---
 
 :: title ::
@@ -35,6 +35,9 @@ slide_info: false
 layout: top-title
 color: orange-light
 slide_info: false
+products:
+  active: [claude-code]
+  partial: [cowork]
 ---
 
 :: title ::

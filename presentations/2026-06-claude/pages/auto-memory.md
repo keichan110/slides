@@ -2,9 +2,6 @@
 layout: section
 color: black
 slide_info: false
-products:
-  active: [claude, claude-code]
-  partial: [cowork]
 ---
 
 # Auto Memory
@@ -13,6 +10,9 @@ products:
 layout: top-title
 color: orange-light
 slide_info: false
+products:
+  active: [claude, claude-code]
+  partial: [cowork]
 ---
 
 :: title ::
