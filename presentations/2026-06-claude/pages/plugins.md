@@ -6,6 +6,8 @@ slide_info: false
 
 # Plugins
 
+全員のClaudeを、一瞬で変える
+
 ---
 layout: top-title
 color: orange-light

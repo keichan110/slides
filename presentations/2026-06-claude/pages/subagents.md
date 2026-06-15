@@ -6,6 +6,8 @@ slide_info: false
 
 # Subagents
 
+ClaudeがClaudeを雇う
+
 ---
 layout: top-title
 color: orange-light

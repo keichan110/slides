@@ -6,6 +6,8 @@ slide_info: false
 
 # Commands
 
+`/` 一文字が、世界を動かす
+
 ---
 layout: top-title
 color: orange-light

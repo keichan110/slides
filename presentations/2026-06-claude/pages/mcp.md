@@ -6,6 +6,8 @@ slide_info: false
 
 # MCP
 
+Claudeに、手と目を与える
+
 ---
 layout: top-title
 color: orange-light

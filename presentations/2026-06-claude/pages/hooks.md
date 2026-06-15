@@ -6,6 +6,8 @@ slide_info: false
 
 # Hooks
 
+Claudeの動きに、罠を仕掛ける
+
 ---
 layout: top-title
 color: orange-light

@@ -6,6 +6,8 @@ slide_info: false
 
 # CLAUDE.md
 
+あなた専用Claudeを設計する
+
 ---
 layout: top-title
 color: orange-light

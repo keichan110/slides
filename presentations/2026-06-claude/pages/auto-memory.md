@@ -6,6 +6,8 @@ slide_info: false
 
 # Auto Memory
 
+使うたびに、あなたに似ていく
+
 ---
 layout: top-title
 color: orange-light

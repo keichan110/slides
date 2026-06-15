@@ -6,6 +6,8 @@ slide_info: false
 
 # Skills
 
+繰り返しを、資産にする
+
 ---
 layout: top-title
 color: orange-light

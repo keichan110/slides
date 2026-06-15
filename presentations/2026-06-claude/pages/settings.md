@@ -6,6 +6,8 @@ slide_info: false
 
 # settings.json
 
+Claudeが逆らえない掟を刻む
+
 ---
 layout: top-title
 color: orange-light
