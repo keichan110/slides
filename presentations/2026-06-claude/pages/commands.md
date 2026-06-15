@@ -9,7 +9,7 @@ slide_info: false
 `/` 一文字が、世界を動かす
 
 ---
-layout: top-title
+layout: top-title-two-cols
 color: orange-light
 slide_info: false
 products:
@@ -21,30 +21,16 @@ products:
 
 # Commands
 
-:: content ::
+:: left ::
 
 - `/` から始まるコマンドで Claude Code をセッション内から制御する組み込み機能
 - モデル切替・コンテキスト整理・ワークフロー実行などをすばやく操作できる
 - メッセージの先頭でのみ認識される
 
----
-layout: top-title
-color: orange-light
-slide_info: false
-products:
-  active: [claude-code, cowork]
-  partial: [claude]
----
-
-:: title ::
-
-# Commands
-
-:: content ::
+:: right ::
 
 | コマンド | 概要 |
 |---|---|
-| `/help` | 困ったらこれ |
 | `/model` | モデル切替 |
 | `/clear` | コンテキストをリセット |
 | `/compact` | 会話履歴を圧縮 |
