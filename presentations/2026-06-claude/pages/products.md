@@ -18,7 +18,7 @@ slide_info: false
 
 :: content ::
 
-**Web・アプリ版のメインプロダクト** — claude.com から今すぐ使える
+**Web・アプリ版のメインプロダクト** — claude.ai から今すぐ使える
 
 - **チャット UI**: ブラウザ / デスクトップアプリ (macOS・Windows) / モバイル
 - **ウェブ検索**: リアルタイムで最新情報を取得
@@ -26,6 +26,18 @@ slide_info: false
 - **音声モード**: 声で会話できる
 - **連携**: Chrome 拡張機能 / Slack / Microsoft 365
 - **Skills**: 特定タスク向けの専門機能を追加できる
+
+---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
+
+# Claude
+
+:: content ::
 
 ---
 layout: top-title
@@ -55,6 +67,19 @@ slide_info: false
 
 :: title ::
 
+# Claude Code
+
+:: content ::
+
+
+---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
+
 # Claude Cowork
 
 :: content ::
@@ -66,6 +91,18 @@ slide_info: false
 - **画像 → データ変換**: レシートや請求書をスプレッドシートに変換
 - **安全設計**: 実行前に計画を提示し、承認を取ってから動く
 - **マルチデバイス**: デスクトップ・モバイルどこからでもタスクを送信
+
+---
+layout: top-title
+color: orange-light
+slide_info: false
+---
+
+:: title ::
+
+# Claude Cowork
+
+:: content ::
 
 ---
 layout: top-title
