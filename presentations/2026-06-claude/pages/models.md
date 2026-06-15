@@ -8,13 +8,13 @@ slide_info: false
 
 ---
 layout: top-title
-color: orange-light
+color: gray
 slide_info: false
 ---
 
 :: title ::
 
-# Claude Fable 5
+# Claude Fable 5 <small>(停止中)</small>
 
 :: content ::
 
