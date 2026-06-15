@@ -7,7 +7,7 @@ slide_info: false
 # Products
 
 ---
-layout: top-title
+layout: top-title-two-cols
 color: orange-light
 slide_info: false
 ---
@@ -16,7 +16,7 @@ slide_info: false
 
 # Claude
 
-:: content ::
+:: left ::
 
 **Web・アプリ版のメインプロダクト** — claude.ai から今すぐ使える
 
@@ -27,20 +27,12 @@ slide_info: false
 - **連携**: Chrome 拡張機能 / Slack / Microsoft 365
 - **Skills**: 特定タスク向けの専門機能を追加できる
 
----
-layout: top-title
-color: orange-light
-slide_info: false
----
+:: right ::
 
-:: title ::
-
-# Claude
-
-:: content ::
+![Claude](../public/screenshots/claude.png)
 
 ---
-layout: top-title
+layout: top-title-two-cols
 color: orange-light
 slide_info: false
 ---
@@ -49,7 +41,7 @@ slide_info: false
 
 # Claude Code
 
-:: content ::
+:: left ::
 
 **ターミナル・IDE から動くコーディングエージェント**
 
@@ -59,21 +51,12 @@ slide_info: false
 - **対応環境**: ターミナル / VS Code / JetBrains / Web / Slack
 - **権限管理**: ファイル編集・コマンド実行の前に確認を取る安全設計
 
----
-layout: top-title
-color: orange-light
-slide_info: false
----
+:: right ::
 
-:: title ::
-
-# Claude Code
-
-:: content ::
-
+![Claude Code](../public/screenshots/claude_code.png)
 
 ---
-layout: top-title
+layout: top-title-two-cols
 color: orange-light
 slide_info: false
 ---
@@ -82,7 +65,7 @@ slide_info: false
 
 # Claude Cowork
 
-:: content ::
+:: left ::
 
 **バックグラウンドでタスクを自律実行するエージェント**
 
@@ -92,17 +75,9 @@ slide_info: false
 - **安全設計**: 実行前に計画を提示し、承認を取ってから動く
 - **マルチデバイス**: デスクトップ・モバイルどこからでもタスクを送信
 
----
-layout: top-title
-color: orange-light
-slide_info: false
----
+:: right ::
 
-:: title ::
-
-# Claude Cowork
-
-:: content ::
+![Claude Cowork](../public/screenshots/claude_cowork.png)
 
 ---
 layout: top-title
