@@ -36,3 +36,11 @@ clicks: 1
     <span class="text-white text-xl font-bold">Claude</span>
   </div>
 </div>
+
+<!--
+⏱ 約1分
+
+ChatGPT・Gemini・Copilotを使い慣れている方が多いと思いますが、今日はその中の「Claude」に絞って深掘りします。クリックするとClaudeだけが残るアニメーションで「ここからClaudeの話をする」という切り替えのサインです。
+
+→ 次：Claudeとは何か、Anthropicという会社から紹介します
+-->

@@ -31,6 +31,14 @@ slide_info: false
 
 ![Claude](../public/screenshots/claude.png)
 
+<!--
+⏱ 約2分
+
+claude.aiは今すぐ無料で使えるメインの入口です。デスクトップアプリはブラウザを開かなくていいので個人的にはこちらをメインにしています。ウェブ検索やファイルアップロードはGeminiでもおなじみの機能ですが、Slack・Microsoft 365との公式連携があるのも特徴です。
+
+→ 次：エンジニア向けのClaude Codeを紹介します
+-->
+
 ---
 layout: top-title-two-cols
 color: orange-light
@@ -54,6 +62,14 @@ slide_info: false
 :: right ::
 
 ![Claude Code](../public/screenshots/claude_code.png)
+
+<!--
+⏱ 約3分
+
+他のAIとの最大の違いがここで、ファイルを手動で貼り付けなくてもコードベース全体を読んで作業してくれます。IssueをGitHubから拾ってきてPRまで出してくれる、というのが実際にやってみると驚きのポイントです。後半でカスタマイズの話を詳しくするので、今は「こういうものがある」という認識で大丈夫です。
+
+→ 次：バックグラウンドで動くClaude Coworkです
+-->
 
 ---
 layout: top-title-two-cols
@@ -79,6 +95,14 @@ slide_info: false
 
 ![Claude Cowork](../public/screenshots/claude_cowork.png)
 
+<!--
+⏱ 約2分
+
+Claude Codeがエンジニア向けなのに対し、Coworkは全員向けの自律エージェントです。「頼んで画面を閉じておけば終わっている」という体験を目指しています。まだ新しいプロダクトなので実際に試してみるとフィードバックしがいがあります。
+
+→ 次：外部サービスとの連携プロダクトを紹介します
+-->
+
 ---
 layout: top-title
 color: orange-light
@@ -99,3 +123,9 @@ slide_info: false
 
 ## Claude for Microsoft 365
 - Excel・Word・PowerPoint・Outlook に Claude を統合してコンテキストを共有しながら編集
+
+<!--
+⏱ 約1分
+
+すでに使っているツールの中からClaudeを呼べるのがポイントです。特にSlack連携は「スレッドに@claudeして返信を書かせる」だけでなく、Claude CodeのコーディングタスクをSlackから発行できるのが実用的です。
+-->
