@@ -86,6 +86,10 @@ slide_info: false
 :: content ::
 
 ---
+src: './pages/map.md'
+---
+
+---
 src: './pages/claude-md.md'
 ---
 
